@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_grid_app/categories_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         primaryColor: Colors.amber
       ),
-      home: MyHomePage(),
+      home: CategoriesScreen(),
     );
   }
 }
