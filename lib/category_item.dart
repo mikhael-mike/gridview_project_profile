@@ -6,6 +6,8 @@ class CategoryItem extends StatelessWidget {
   // const CategoryItem({ Key? key }) : super(key: key);
   CategoryItem(this.title, this.color);
 
+  // 6 
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,7 +22,7 @@ class CategoryItem extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        borderRadius: BorderRadius.circular(15.0),
+        borderRadius: BorderRadius.circular(1.0),
       ),
     );
   }
