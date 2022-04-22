@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navigation_grid_app/categories_screen.dart';
+import 'package:navigation_grid_app/category_meals_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         accentColor: Colors.amber,
-        canvasColor: Color.fromRGBO(255, 254, 229, 23),
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raileway',
         
         // textTheme: ThemeData.light().textTheme.copyWith(
@@ -27,7 +28,12 @@ class MyApp extends StatelessWidget {
           
         // ),
       ),
+      // initialRoute: '/',
       home: CategoriesScreen(),
+      routes: {
+        // '/': ((ctx) => CategoriesScreen()), 
+        CategoryMealsScreen.routeName: ((ctx) => CategoryMealsScreen()),
+      },
     );
   }
 }
